@@ -1,0 +1,11 @@
+<h3>World Class Selection of Cocktails</h3>
+<h2>Cocktails</h1>
+
+<% @cocktails.each do |c| %>
+ <h1><%= link_to c.name.capitalize, cocktail_path(c) %></h1>
+<% end %>
+
+
+
+
+
