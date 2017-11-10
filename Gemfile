@@ -1,3 +1,5 @@
+ruby '2.3.5'
+
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -13,6 +15,11 @@ gem 'faker'
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+
+gem 'figaro'
+
+gem 'cloudinary'
+
 
 
 # Use SCSS for stylesheets
