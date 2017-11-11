@@ -23,10 +23,23 @@ class CocktailsController < ApplicationController
     end
   end
 
+  def destroy
+    @cocktail = Cocktail.find(params[:id])
+    if @cocktail.destroy
+      flash[:alert] = "We have removed that cocktail"
+      redirect_to cocktails_path(@cocktail)
+    else
+      flash[:alert] = "We have not removed selected cocktail"
+      render :new
+    end
+  end
+
+
+
   private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, photos: [])
   end
 end
 

@@ -1,5 +1,63 @@
 // Specific CSS for your home-page
 
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: light-gray;
+    background-image: red;
+}
+
+
+
+
 .btn-primary {
   margin-left: 10px;
 }
+
+
+
+
+.alert {
+  color: red;
+}
+
+.card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.card-description a {
+  text-decoration: none;
+}
+
+
+.cocktail-name {
+  color: white;
+  text-decoration: none;
+}
+
+.cocktail-name:hover {
+  font-weight: bold;
+}
+
+
+
+#style-chilled {
+  color: red;
+  font-size: 16px;
+}
+
+#world-class {
+  font-weight: bold;
+  font-size: 24;
+  text-align: center;
+  color: gray;
+}
+
+

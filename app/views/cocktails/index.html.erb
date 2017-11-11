@@ -1,9 +1,18 @@
-<h3>World Class Selection of Cocktails</h3>
-<h2>Cocktails</h1>
 
-<% @cocktails.each do |c| %>
- <h1><%= link_to c.name.capitalize, cocktail_path(c) %></h1>
-<% end %>
+ <%= render "layouts/banner" %>
+ <h3 id="world-class">World Class Selection of Cocktails</h3>
+  <div class="container">
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-6 col-md-4 col-lg-3">
+       <%= render partial:'cocktailcard', locals: {cocktail:cocktail} %>
+     </div>
+     <% end %>
+   </div>
+ </div>
+
+
+
 
 
 
