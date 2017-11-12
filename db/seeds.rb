@@ -30,6 +30,7 @@ c = Cocktail.create(name:"manhattan")
 
 d = Dose.new(description: "2cl")
 
+
 d.cocktail = c
 d.ingredient = i
 

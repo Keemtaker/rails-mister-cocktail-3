@@ -1,5 +1,9 @@
+<% if cocktail.photos?  %>
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photos.first.path, crop: :fill %>'">
+  <% else %>
+  <% cocktail.destroy %>
+  <% end %>
 
-<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photos.first.path, crop: :fill %>')">
   <div id="style-chilled">Chilled</div>
   <div class="card-description">
     <%= link_to cocktail_path(cocktail) do %>
