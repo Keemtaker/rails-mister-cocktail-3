@@ -26,6 +26,7 @@
       <%= d.association :ingredient %>
       <%= d.submit "Add a dose", class: "btn btn-success" %>
       <% end %>
+      <div class="fb-send" data-href="https://mr-cocktail-3-keemtaker.herokuapp.com/cocktails"></div>
       <%= link_to cocktail_path(@cocktail), method: :delete do %>
       <% end %>
 
