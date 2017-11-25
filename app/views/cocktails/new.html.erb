@@ -1,10 +1,22 @@
-<h1>New Cocktail</h1>
 
+<div class="container">
+  <div class="fullscreen-bg">
+<h1 id="style-text">Cocktails are not that complicated. You can make your own cocktail</h1>
+<%= video_tag(["cocktail.mp4"], :autoplay => true, :loop => true) %>
+</div>
+
+<div class="style-form">
 <%= simple_form_for @cocktail do |c| %>
-  <%= c.input :name %>
+  <%= c.input :name, placeholder: "Name of cocktail" %>
   <%= c.input :photos, as: :attachinary %>
   <%= c.submit "Create a cocktail", class: "btn btn-primary" %>
 <% end %>
+</div>
+</div>
+
+
+
+
 
 
 
