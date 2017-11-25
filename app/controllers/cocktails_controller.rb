@@ -26,7 +26,7 @@ class CocktailsController < ApplicationController
   def destroy
     @cocktail = Cocktail.find(params[:id])
     if @cocktail.destroy
-      flash[:alert] = "We have removed that cocktail"
+      flash[:alert] = "You succesfully deleted #{@cocktail.name} cocktail"
       redirect_to cocktails_path(@cocktail)
     else
       flash[:alert] = "We have not removed selected cocktail"

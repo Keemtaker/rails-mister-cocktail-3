@@ -1,7 +1,6 @@
-
+  <div class="container">
  <%= render "layouts/banner" %>
  <h3 id="world-class">World Class Selection of Cocktails</h3>
-  <div class="container">
     <div class="row">
       <% @cocktails.each do |cocktail| %>
       <div class="col-xs-6 col-md-4 col-lg-3">
@@ -9,6 +8,8 @@
      </div>
      <% end %>
    </div>
+           <%= render "layouts/footer" %>
+
  </div>
 
 
